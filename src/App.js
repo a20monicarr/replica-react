@@ -1,20 +1,24 @@
 
 import './App.css';
+import './index.js';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import error from './pages/error'
+import Home from './pages/Home';
+import Discover from './pages/Discover';
+import Join from './pages/Join';
+import Error from './pages/Error';
+import { Button } from 'bootstrap';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Link to="/nosotros">Nosotros</Link>
-    </div>
       <Routes>
-        <Route path='/nosotros' element={<Nosotros/>}></Route>
-        <Route path='#'element ={error}></Route>
+       <Route path='/' element ={<Home/>}></Route>
+       <Route path='/discover' element ={<Discover/>}></Route>
+       <Route path='/join' element ={<Join/>}></Route>
+       <Route path='#' element ={<Error/>}></Route>
       </Routes>
-      </BrowserRouter>
+     </BrowserRouter>
   );
 }
 
-export default App;
+
