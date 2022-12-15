@@ -1,13 +1,9 @@
-import React from 'react';
-import navbar from '../components/navbar';
+import React from 'react'
 
-function Home() {
+const home = () => {
   return (
-    <div>
-      <h1>Hola, React</h1>
-      <button className="btn btn-secondary">Botón</button>
-    </div>
+    <div>home</div>
   )
 }
 
-export default Home
+export default home

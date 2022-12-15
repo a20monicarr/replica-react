@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react"
+import { Link } from "react-router-dom";
 
-const button = () => {
-  return (
-    <div>button</div>
-  )
-}
 
-export default button
+function Button() {
+    return (
+      <button type="button" class="btn btn-dark">Botón</button>
+    );
+  }
+  export default Button;
